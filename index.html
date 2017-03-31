@@ -1,0 +1,402 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion movil</title>
+
+ <!--grupo CSS-->
+ <link rel="stylesheet" href="css/App-2.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ <!--grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/PTCS2.jpg','imagenes/Ga.jpg','imagenes/BB.jpg','imagenes/ATT.jpg')">
+
+ <div data-role="page" id="Principal" data-theme="A">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar">
+  <h1>Telefonia Celular</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+   </div>
+   <div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <H2>¿Que es un Telefono Celular?</H2>
+       <p>Las caracteristicas que debe tener</p>
+      </a>
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <H2>Historia del Telefono Celular</H2>
+       <p>Desde la creacion del Motorola 8000x</p>
+      </a>
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <H2>Clasificacion de Celulares de acuerdo a su gama</H2>
+       <p>Desde un gama baja, hasta llegar a gama alta</p>
+      </a>
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <H2>Compañias en Mexico que manejan el servcio de telefonia celular</H2>
+       <p>¿Cada compañia ofrece un servicio adecuado a tus necesidades?</p>
+      </a>
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <H2>Telefonos del Futuro</H2>
+       <p>¿Que nos espera en el futuro?</p>
+      </a> 
+     </li> 
+    </ul>
+   </div>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/bb.jpg" alt="BB" title="BB" id="wows1_0"/></li>
+		<li><img src="data1/images/ga.jpg" alt="Ga" title="Ga" id="wows1_1"/></li>
+		<li><img src="data1/images/gb.jpg" alt="Gb" title="Gb" id="wows1_2"/></li>
+		<li><img src="data1/images/gm.jpg" alt="Gm" title="Gm" id="wows1_3"/></li>
+		<li><img src="data1/images/ptc.jpg" alt="PTC" title="PTC" id="wows1_4"/></li>
+		<li><img src="data1/images/ptcs1.jpg" alt="PTCS1" title="PTCS1" id="wows1_5"/></li>
+		<li><img src="data1/images/ptcs2.jpg" alt="PTCS2" title="PTCS2" id="wows1_6"/></li>
+		<li><img src="data1/images/qtc.jpg" alt="QTC" title="QTC" id="wows1_7"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/qtcs1.jpg" alt="http://wowslider.com/" title="QTCS1" id="wows1_8"/></a></li>
+		<li><img src="data1/images/qtcs2.jpg" alt="QTCS2" title="QTCS2" id="wows1_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="BB"><span><img src="data1/tooltips/bb.jpg" alt="BB"/>1</span></a>
+		<a href="#" title="Ga"><span><img src="data1/tooltips/ga.jpg" alt="Ga"/>2</span></a>
+		<a href="#" title="Gb"><span><img src="data1/tooltips/gb.jpg" alt="Gb"/>3</span></a>
+		<a href="#" title="Gm"><span><img src="data1/tooltips/gm.jpg" alt="Gm"/>4</span></a>
+		<a href="#" title="PTC"><span><img src="data1/tooltips/ptc.jpg" alt="PTC"/>5</span></a>
+		<a href="#" title="PTCS1"><span><img src="data1/tooltips/ptcs1.jpg" alt="PTCS1"/>6</span></a>
+		<a href="#" title="PTCS2"><span><img src="data1/tooltips/ptcs2.jpg" alt="PTCS2"/>7</span></a>
+		<a href="#" title="QTC"><span><img src="data1/tooltips/qtc.jpg" alt="QTC"/>8</span></a>
+		<a href="#" title="QTCS1"><span><img src="data1/tooltips/qtcs1.jpg" alt="QTCS1"/>9</span></a>
+		<a href="#" title="QTCS2"><span><img src="data1/tooltips/qtcs2.jpg" alt="QTCS2"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed" >
+    <div>
+     <img src="imagenes/persona_azul.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion dos</h4>
+       <h4> Luis David Delgado Jimenez</h4>
+      </div>
+     </div>
+    </div>  
+    <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <H1 align="center">¿Que es un Telefono celular? </H1>
+     </div>
+     <div data-role="content" align="center">
+      <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Celulares</h1>
+    <div>
+     <p>Sistemas operativos</p>
+     <br>
+    </div>
+    <div>
+     <img src="imagenes/QTC.png" width="50%" height="32%">
+    </div>
+   </div>
+  </div> 
+       <div>
+        <h2 align="justify">Se conoce como celular al dispositivo inalámbrico electrónico que está preparado para tener acceso a la telefonía celular, también conocida como móvil.<br>
+          En tanto, la denominación celular tiene su razón de ser en que cada una de las antenas repetidoras, que forman parte de la red, son células.<br>
+         El rasgo diferencial que ostenta el teléfono celular por sobre los otros tipos de teléfono es su fácil portación, en la cartera, en el bolso, incluso en los bolsillos del pantalón o pollera, los seres humanos que formamos parte de esta comunidad conectada celularmente podemos llevar con nosotros y a cualquier lado este tipo de teléfono porque no pesan casi nada.</h2>
+       
+        <p align="justify"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('QTCS','','imagenes/QTCS2.jpg',0)"><img src="imagenes/QTCS1.jpg" width="486" height="272" id="QTCS" align="middle"></a></p>
+        <h2 align="justify"><br>
+        </h2>
+       </div>
+      </div>
+      <div data-role="main" class="ui-content">
+       <h4> 
+       <div align="center">Aplicacion dos, LDDJ</div>
+     </div>
+      </div>
+     </div>
+  <!-- </div>-->
+   
+   <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1 align="center">Historia del telefono celular</h1>
+   </div>
+   <div data-role="content" align="center">
+   <div>
+   <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Primer Celular</h1>
+    <div>
+     <p>Motorola Dynatac 8000x</p>
+     <br>
+    </div>
+    <div>
+     <img src="imagenes/PTC.jpg" width="26%" height="30%">
+    </div>
+   </div>
+  </div> 
+   <p align="justify">El primer teléfono celular de la historia fue el Motorola DynaTAC 8000X, visto por primera vez en 1983. Tenía un peso de 780 gr y medía aproximadamente 33 x 9 x 4.5cm. Obviamente era analógico, y tenía un display pequeño. La tenía una durabilidad de no más de una hora hablando u 8 horas en stand-by. La calidad de sonido era muy mala, era pesado y anti estético, pero igualmente, determinadas personas pagaban su valor de USD $3,995 lo que lo convertía en un objeto de lujo al cual solamente podían acceder determinados grupos sociales. <br><br>
+     <strong>Primera generación de celulares</strong> <br>
+     <br>
+     La primera generación de teléfonos celulares surge con la aparición en el mercado mundial del conocido "ladrillo" (DynaTac 8000X) a fines de los años 80. Estos equipos tenían tecnología analógica para uso restringido de comandos de voz. La tecnología predominante de esta generación fue la AMPS (Advanced Mobile Phone System) <br>
+     <br>
+     <strong>Segunda generación de celulares</strong> <br>
+     <br>
+     Ésta surge en la década de los 90, con teléfonos celulares con tecnología digital y con ciertos beneficios muy valorados,como duración extendida de la batería, y mayor definición y calidad de sonido. Estos teléfonos, >ya tenían la posibilidad de enviar y recibir mensajes de texto (SMS)</a> aunque en esa época no fue el "boom" de esta herramienta. A fines de la década se produjo el auge de los teléfonos celulares; la gente común se agregó a la lista de usuarios, favorecidos por el precio y la competencia entre las diferentes compañías.    </h2>
+   </p>
+   <p align="justify"><strong>Tercera generación de celulares</strong> <br>
+     <br>
+    En esta generación se unen las tecnologías anteriores con las nuevas incorporadas en los teléfonos celulares. Surge una masificación, y ahora los mismos poseen un chip (tarjeta SIM), donde se encuentra toda la información. </p>
+   <p align="justify"><strong>Smartphones y 4G</strong><br>
+     <br>
+     No cabe duda que la aparición en el mercado del standard de comunicaciones 4G, cambió para siempre el modo en que los usuarios de teléfonos celulares usan su dispositivo. A tal punto esto es así que la telefonía de consumo de entretenimiento tal como la conocemos en la actualidad no podría existir.<br>
+     <br>
+     La unión del smartphone, una impresionante mezcla entre teléfono y computadora, y este nuevo estándar de comunicaciones, sin duda alguna rompió el esquema de consumo de contenidos al cual estábamos acostumbrados desde hace años, ya que gracias a la velocidad de transmisión de datos que puede alcanzar 4G podemos consumir sin ninguna clase de problemas contenidos de video en alta definición, música en streaming y mil cosas más, además de que por supuesto todo lo que tenga que ver con nuestro trabajo lo podremos realizar varias veces más rápido y sin tantas complicaciones, en el lugar y momento en donde nos encontremos, puntos que hoy son vitales para el desenvolvimiento diario de millones de personas alrededor del mundo.</strong></p>
+   <p align="justify"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('PTCS','','imagenes/PTCS2.jpg',1)"><img src="imagenes/PTCS1.jpg" width="683" height="308" id="PTCS"></a><br>
+   </p>
+   </div>
+    <div data-role="footer" data-theme="a" data-position="fixed">
+     <h4>Aplicacion dos,LDDJ</h4>
+     </div>
+    </div>
+   </div>
+   
+   <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <H1>Clasificacion de celulares de acuerdo a su gama</H1>
+     </div>
+     <div data-role="content" align="center">
+       <div>
+         <p><strong> Gama</strong> <strong>Baja</strong></p>
+         <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Gama Baja</h1>
+    <div>
+     <p>Algunos ejemplos</p>
+     <br>
+    </div>
+    <div>
+     <img src="imagenes/Gb.jpg" width="49%" height="29%">
+    </div>
+   </div>
+  </div> 
+         <p align="justify">En esta categoría distribuiremos los celulares inteligentes con plataformas que no dan soporte a muchas utilidades que tienen los teléfonos de otras gamas. Sus pantallas son de escasas dimensiones y resolución, poca memoria RAM y mínima capacidad de almacenamiento interno, cámaras VGA (no llegan al Megapíxel, menores herramientas, acceso a redes y aplicaciones, entre otros aspectos. Se diferencian de los teléfonos básicos (no inteligentes), por el hecho de permitir funcionalidades que van más allá de llamar y recibir llamadas. La clave de todo es que los smartphones trabajan con un sistema operativo informático móvil, dotado de una interfaz para el acceso a Internet, cuentas de correo electrónico y el ingreso de datos a través de un teclado QWERTY. Permiten instalación de programas, la lectura de documentos en distintos formatos y te ayudan a realizar tareas y organizar tus archivos personales. Están diseñados de manera muy sencilla para la fácil y rápida compenetración del usuario, los materiales de fabricación garantizan durabilidad y la batería generalmente es de gran rendimiento.</p>
+         <p><strong> Gama</strong> <strong>Media</strong></p>
+         <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Gama Media</h1>
+    <div>
+     <p>Algunos ejemplos</p>
+     <br>
+    </div>
+    <div>
+     <img src="imagenes/Gm.jpg" width="50%" height="29%">
+    </div>
+   </div>
+  </div> 
+         <p align="justify">Los smartphones de media gama se caracterizan por tener pantallas de calidad, pero de menor tamaño, resolución y profundidad de pixeles por pulgada; en la mayoría de los casos funcionan con una versión anterior a la más actual de su sistema operativo; los procesadores no tienen la potencia de los que encontramos en gamas superiores, y las cámaras y fotográficas generalmente cuentan con menos cantidad de megapíxeles. En esta categoría también situaremos a cierto número de celulares que en su momento fueron considerados de alta gama, pero que se han quedado rezagados por los adelantos que se producen en la telefonía celular. </p>
+         <p><strong> Gama Alta</strong></p>
+         <p align="justify">
+         <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Gama Alta</h1>
+    <div>
+     <p>Algunos ejemplos</p>
+     <br>
+    </div>
+    <div>
+     <img src="imagenes/Ga.jpg" width="50%" height="29%">
+    </div>
+   </div>
+  </div> 
+         <div align="justify">
+           <p>Aquí agruparemos a los teléfonos celulares no sólo considerados como emblemáticos de cada empresa fabricante, sino también por reunir todas las características, componentes, avances, tendencias e innovaciones que proporciona la tecnología móvil para el momento del lanzamiento, en lo concerniente a su funcionamiento: pantalla, acceso a redes de máxima velocidad, conectividad, versión del sistema operativo, procesador y la frecuencia en GHz, memoria RAM, batería, capacidad y servicios gratuitos de almacenamiento, además de la cámara fotográfica y video.
+             </p>
+           </p>
+           <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('GS','','imagenes/Ga.jpg',1)"><img src="imagenes/Gb.jpg" width="515" height="197" id="GS" align="middle"></a></p>
+         </div>
+         <p align="justify">&nbsp;</p>
+         <h2>&nbsp;</h2>
+       </div>
+      </div>
+     <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4> Aplicacion dos, LDDJ</div>
+      </div>
+     <!--</div>-->
+   </div>
+   
+   <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <H1 align="center">Compañias en Mexico que manejan el servcio de telefonia celular</H1>
+     </div>
+     <div data-role="content" align="center">
+       <div>
+        <h2>Hay muchas compañias de telefonia celular en Mexico, cada una ofrecen servicios diferentes para cada una de las necesidades presentes.</h2>
+        <h2>Telcel        </h2>
+         <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Telcel</h1>
+    <div>
+     <p>La mejor Red</p>
+     <br>
+    </div>
+    <div>
+     <img src="imagenes/Telcel.jpg" width="50%" height="32%">
+    </div>
+   </div>
+  </div> 
+        <p align="justify">Telcel es una marca propiedad de la empresa mexicana Radiomóvil DIPSA, S.A. de C.V. Tiene presencia en todo México y se dedica a ofrecer servicios de telefonía móvil, telefonía fija, servicios de banda ancha, entre otros servicios. Es subsidiaria de la empresa mexicana América Móvil, (una filial de Grupo Carso).</p>
+        <p align="justify">Actualmente Telcel es un sistema telefónico móvil con infraestructura propia que opera en todo México. Telcel contaba en 1990 con 35 mil usuarios o líneas celulares; en 1992 se tenían 146,000 usuarios; en 1994, 306,000 usuarios; en 1997 cerró el año con un millón cien mil clientes; para 1998 se alcanzaron dos millones ciento diez mil usuarios; hasta diciembre de 1999 se contabilizaron con 5 cinco millones doscientos mil clientes. El crecimiento ha sido explosivo llevando a cerrar el año 2000 con diez millones quinientos mil; 2001 con dieciséis millones novecientos mil. Para 2002 Telcel lanza la red GSM en México, marcando la pauta hacia lo que serían los servicios de tercera generación. Telcel fue la primera compañía en México en usar la tecnología GSM. Actualmente Telcel es quien tiene la mayor cobertura a nivel nacional.</p>
+        <p align="justify">En 2012, Telcel contaba con poco más de sesenta y cinco millones de usuarios y mantiene concesiones para operar en las 9 regiones de México, cubriendo más de ciento noventa mil poblaciones del país, a través de su cobertura 3G y GSM. La banda TDMA en 800 MHz será paulatinamente desactivada, ya que es el mínimo de usuarios que tienen esa banda actualmente.</p>
+        <p align="justify">La tecnología 3G/UMTS de Telcel ofrece enlaces de banda ancha móviles de hasta 1.5 Mbps por segundo, servicio de videollamada, televisión en vivo y video en streaming, además de servicios de Banda Ancha Móvil y telefonía fija con chip. Adicionalmente ofrece venta de música a través de Ideas Music Store y además cuenta con la mayor red de tecnología entre todas sus marcas de teléfonos celulares como: Alcatel, Sony, Sony Ericsson, Skyzen, LG, Samsung, Zonda Telecom, Huawei, Apple, Palm, Nokia, >Motorola, entre otros.</p>
+        <p align="justify">En marzo de 2016 Telcel y AT&amp;T ganan licitación de espectro de la banda de frecuencias 1710-1780 MHz/2110-2180 MHz (Banda AWS).</p>
+        <h2 id="firstHeading" lang="es">Movistar</h2>
+        <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Movistar</h1>
+    <div>
+     <p>Ofrece Grandes beneficios sin costo</p>
+     <br>
+    </div>
+    <div>
+     <img src="imagenes/Movistar.jpg" width="67%" height="36%">
+    </div>
+   </div>
+  </div> 
+        <p align="justify">&nbsp;</p>
+        <p align="justify">Movistar México (legalmente Pegaso PCS, S.A. de C.V., es una empresa proveedora de servicios de telefonía móvil en México, subsidiaria del Grupo Telefónica y su División Telefónica Móviles.</p>
+        <p align="justify">Actualmente, utiliza las tecnologías:<br>
+        </p>
+        <div align="justify">
+          <ul>
+            <li>GSM 1900 (Lanzada en abril de 2003)</li>
+            <li>CDMA 800/1900 (en servicio desde 1999 y, desactivadas comercialmente en julio de 2006)</li>
+            <li>UMTS/3G (Lanzada en abril de 2007 en su primera fase en el norte del país y, durante 2010, extendida a lo largo del país)</li>
+            <li>HSDPA/3.5G (Lanzada el 20 de noviembre de 2008)</li>
+            <li>HSUPA o HSPA+/>3.75G (Lanzada en julio de 2010)</li>
+            <li>LTE/4G (Lanzada en octubre de 2012 en primera etapa en las zonas más importantes del D.F, Guadalajara y Monterrey) en Band Class (o mejor conocida como BC) a 1900 MHz en la banda 2.<br>
+              El 3 de octubre, MoviStar enciende en la totalidad de la Ciudad de México y Área conurbada, la red LTE y para finales de diciembre, hace lo mismo en Guadalajara.</li>
+          </ul>
+        </div>
+        <p align="justify">En septiembre de 2014, MoviStar mejora y lanza nuevamente su red 4G LTE en toda la Ciudad de México, ofreciendo velocidades promedio de 25Mbps.</p>
+        <p align="justify">Para el 1° de Julio de 2015, MoviStar ya cuenta con cobertura 4G LTE en 15 ciudades de la República Mexicana, como son; México D.F. y Área Metropolitana, Guadalajara, Monterrey, CD. Juárez, CD. Victoria, Culiacán, Hermosillo, León, Matamoros, Mexicali, Nuevo Laredo, Puebla, Querétaro, Reynosa, San Luis Potosí, Saltillo, Tampico, Tijuana y Toluca. Para la segunda mitad del 2015, se encenderá la red 4G LTE en Acapulco, Cancún, Mérida, Nayarit, Veracruz, Baja California, entre otros más, finalizando con servicio en aproximadamente 50 Ciudades.</p>
+        <p align="justify">Durante la Campus Party México 2010, se habían realizado pruebas de 4G sobre LTE. En ese entonces, fue la primera red LTE en servicio en el país. Así mismo, en la edición de Campus Party México 2011, se instaló una red LTE 100% real en colaboración con Nokia-Siemens (con permisos especiales de parte del Gobierno), para conectar a los usuarios al servicio 4G, donde se alcanzaron velocidades de 93Mbps. Finalizadas esas pruebas, Movistar comenzó a implantar celdas con capacidad LTE, para estar listos para ofrecer dicho servicio.</p>
+        <p align="justify">En la 3.ª edición de la Campus Party México, Francisco Gil Díaz, presidente de Telefónica México y Centroamérica, anunció que una vez que el gobierno licitara las frecuencias necesarias, desplegarían y encenderían la red LTE/4G, lo que esperaban se realizara antes de iniciar el 2013 y, así se dio.</p>
+        <p align="justify">A pesar de contar con una gran variedad tecnológica, su rezago en la ampliación de Cobertura 3.5G/3.75G le impidió en algún momento, competir contra Iusacell o Telcel de forma agresiva en el Servicio de datos 3G, donde las últimas 2 empresas tenían mayoría del mercado. Actualmente, Movistar supera en cobertura y servicio a Iusacell y compite directamente contra Telcel.</p>
+        <p align="justify">Sobre este tema de rezago, pasó de cubrir 8 ciudades 3G en noviembre de 2008 y 19 Ciudades en 2009, a 60 Ciudades durante 2010 y 2011 y el resto del país en la última parte de 2011, gracias a las licitaciones de frecuencia del Gobierno Mexicano.</p>
+        <p align="justify">En cuanto a la tecnología LTE, los días 19 y 20 de septiembre de 2014, MoviStar realizó un evento al que titularon "#VasAVolar", como parte de su campaña de re-lanzamiento de la red, donde la idea era "saturar" la red, para comprobar el funcionamiento y estabilidad de la red, al tener cientos de usuarios simultáneos utilizando de forma intensa las aplicaciones más importantes como fueron: Google, Facebook, Twitter, Vine, FourSquare, Instagram, Pinterest, YouTube, Spotify, Netflix, entre otras más, así como transmisión del evento en tiempo real ONLINE vía YouTube, programas de Radio (Ibero 90.9), Vuelo de Drones, entre muchas más. Los resultados fueron excelentes para la compañía y, dicho festival tuvo como principal objetivo poder probar como funcionaba la tecnología en uso rudo, para poder abrirla al público comercialmente el día 3 de octubre.</p>
+        <p align="center">
+          <h2>AT &amp; T
+          </p>
+         </h2>
+         <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>AT & T</h1>
+    <div>
+     <p>Conoce los planes y promociones que tenemos para ti</p>
+     <br>
+    </div>
+    <div>
+     <img src="imagenes/ATT.jpg" width="67%" height="38%">
+    </div>
+   </div>
+  </div> 
+         <p align="justify">AT&amp;T American T 0elephone and Telegraph) es una compañía estadounidense de telecomunicaciones 2 Provee servicios de voz, video, datos e Internet a negocios, clientes y agencias del gobierno.</p>
+        <p align="justify">Durante su larga historia ha sido, en ocasiones, la compañía telefónica más grande del mundo y el operador de televisión por cable más grande de los Estados Unidos, llegando a ser clasificada como un monopolio. En 2005 se fusionó con su competidora SBC Communications</p>
+        <p align="justify"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/ATT.jpg',1)"><img src="imagenes/Movistar.jpg" width="557" height="271" id="Image15"></a></p>
+        <p align="justify">&nbsp;</p>
+        
+       </div>
+      </div>
+     <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4> Aplicacion dos, LDDJ</div>
+      </div>
+     <!--</div>-->
+   </div>
+   <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <H1 align="center"> Telefonos del Futuro </H1>
+     </div>
+     <div data-role="content" align="center">
+       <div>
+        <h2>Mapee el mundo con Project Tango</a></h2>
+        <p align="justify">El propósito de Tango es simple</a>: mapear el mundo. El smartphone de Google cuenta con sensores que identifican el espacio que rodea al usuario. ¿Qué se puede lograr con esto?</p>
+        <p align="justify">Project Tango transformaría la forma de entender los espacios. En el campo del diseño y la arquitectura, cualquiera podría tener todo un mapa de su hogar –o de cualquier espacio– para poder planear reformas o redecoraciones. En el campo del entretenimiento, se podrían crear juegos personalizados que utilicen los lugares que el usuario recorre como escenarios de competencia. En la salud, las personas que sufren de ceguera podrían caminar por un lugar que no conocen con la asistencia direccional de su smartphone o tableta, y todos tendríamos un gran mapa virtual del mundo para movernos sin salir de casa.</p>
+        <h2>Tenga un celular a la medida con Project Ara</a></h2>
+        <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>AARA</h1>
+    <div>
+     <p>celular revolucionario</p>
+     <br>
+    </div>
+    <div>
+     <img src="imagenes/AARA.jpg" width="67%" height="29%">
+    </div>
+   </div>
+  </div> 
+        <p align="justify">¿Para qué comprar un celular superpoderoso si solo utiliza Facebook, Twitter, WhatsApp y el correo? ¿Pagar extra por una cámara de celular de 41 megapíxeles cuando solo quiere dedicarse a los jueguitos y tomar las fotos del paseo de olla? ¿Necesita más batería porque suele estar en la calle y no quiere quedarse sin energía inesperadamente?</p>
+        <p align="justify">Todas estas son algunas de las inquietudes a la hora de comprar un celular. Con Project Ara se busca que sea el usuario quien elija lo que necesita en su smartphone. Al igual que un traje a la medida, la experiencia del usuario es más cómoda y práctica para el manejo del dispositivo. ¿Demasiado bueno para ser verdad</a>?</p>
+        <p align="justify">El proyecto de celular modular funciona como piezas de Lego que se conectan a una base. El usuario organiza las prioridades del espacio para poner un mejor procesador, más RAM, más memoria interna, más batería o mejor cámara. Si siente que su celular se está quedando corto, puede mejorar el procesador y la RAM sin tener que cambiar los demás componentes. Esto ayuda a que la producción sea más barata y a que la contaminación sea mucho menor.</p>
+        <h2></h2>
+        <h2>Blackberry</h2>
+        <p align="justify">Te imaginas un celular que además de recibir llamadas, tomar fotos y video en alta definición, conectarse a la red y administrar redes sociales, también pueda monitorear tu estado de ánimo. Research In Motion y Art Center College Of Design, te presentan el BlackBerry Empathy.<span id="more-20915"> </span></p>
+        <p align="justify">Parece ser que los estudiantes Kiki Tang y Daniel Yoon se inspiraron en los instrumentos de empatía de <em>Do Androids Dream Of Electric Sheep </em>(Phillip K. Dick), aunque esa es sólo impresión mía. En un concurso patrocinado por RIM, el par de diseñadores crearon el concepto de un <em>smartphone</em> capaz de integrar las emociones humanas y las funciones del &ldquo;social networking&rdquo;.</p>
+        <p align="justify">BlackBerry Empathy, a pesar de ser sólo un proyecto universitario sin sustento real, funcionaría con un anillo que recolecta datos emocionales del usuario. El equipo es de material OLED que permanece transparente cuando no está en uso y que se vuelve opaca y proyecta imagenes cuando se está empleando. Además es completamente táctil, pero en la parte trasera, el diseño cuenta con un teclado físico.</p>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('TF','','imagenes/BB.jpg',1)"><img src="imagenes/AARA.jpg" width="634" height="266" id="TF"></a><br>
+        <p align="justify">&nbsp;</p>
+        <p>&nbsp;</p>
+        
+       </div>
+      </div>
+     <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4> Aplicacion dos, LDDJ</div>
+      </div>
+     <!--</div>-->
+   </div>
+</body>
+</html>
