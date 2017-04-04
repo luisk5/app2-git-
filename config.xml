@@ -33,6 +33,11 @@
 	<!-- >plugin name="cordova-plugin-geolocoation" source="npm" /> -->
 		<!-- Third party plugins -->
 	
+	
+	
+	
+	
+	
 	<!-- Para acceder a paginas en internet-->
 	<allow-intent href="https://*/*"/>
 	<acces origin="https://*/*"/>
